@@ -15,6 +15,8 @@ RUN set -x && \
 
 COPY resources/main.py /opt/cherrypy/main.py
 
+EXPOSE 8080
+
 WORKDIR /opt/cherrypy
 
 CMD ["python3", "/opt/cherrypy/main.py"]
