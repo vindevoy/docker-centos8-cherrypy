@@ -6,7 +6,7 @@ LABEL maintainer="Yves Vindevogel (vindevoy) - yves.vindevogel@asynchrone.com"
 
 RUN set -x && \ 
     dnf update -y && \ 
-    dnf install python38 -y && \ 
+    dnf install python38 --nodocs -y && \ 
     pip3 install cherrypy==$CHERRYPY_VERSION && \ 
     dnf autoremove -y && \ 
     dnf clean all -y && \ 
