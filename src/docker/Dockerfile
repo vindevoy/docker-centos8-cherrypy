@@ -15,7 +15,7 @@ LABEL maintainer="Yves Vindevogel (vindevoy) - yves.vindevogel@asynchrone.com"
 
 RUN dnf update -y
 
-RUN dnf install python38 -y
+RUN dnf install python38 --nodocs -y
 
 RUN pip3 install cherrypy==$CHERRYPY_VERSION
 
